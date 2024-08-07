@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-controls button {
+    background-color: #76c7c0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#calendar-controls span {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.day {
+    padding: 10px;
+    background-color: #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.day.selected {
+    background-color: #76c7c0;
+    color: white;
+}
+
+#time-slots {
+    margin-bottom: 20px;
+}
+
+#slots-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.slot {
+    padding: 10px;
+    background-color: #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.slot.selected {
+    background-color: #76c7c0;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#selected-slots {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#slot-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+

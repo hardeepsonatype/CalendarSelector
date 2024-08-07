@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Slot Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calendar Slot Selector</h1>
+        <div id="calendar-controls">
+            <button id="prev-month">&lt;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&gt;</button>
+        </div>
+        <div id="calendar"></div>
+        <div id="time-slots" class="hidden">
+            <h2>Select Time Slots for <span id="selected-date"></span></h2>
+            <div id="slots-container"></div>
+        </div>
+        <div>
+            <label for="slot-duration">Select Slot Duration:</label>
+            <select id="slot-duration">
+                <option value="30">30 Minutes</option>
+                <option value="60">60 Minutes</option>
+            </select>
+        </div>
+        <div id="selected-slots">
+            <h2>Selected Slots:</h2>
+            <ul id="slot-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
